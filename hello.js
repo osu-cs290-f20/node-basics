@@ -21,3 +21,10 @@ console.log("== Object.keys(circle):", Object.keys(circle));
 Object.keys(circle).forEach(function(key) {
   console.log("  -- circle[" + key + "]:", circle[key]);
 });
+
+var figlet = require('figlet');
+figlet('Hello CS 290!', function (err, data) {
+  if (!err) {
+    console.log(data);
+  }
+});
